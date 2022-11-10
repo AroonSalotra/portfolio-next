@@ -1,0 +1,25 @@
+.container {
+    /* display: flex;
+    gap: 5rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.thumbnail {
+    cursor: pointer;
+}
+
+.img {
+    max-width: 100%;
+    width: max-content;
+    height: auto;
+    object-fit: cover;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    background-color: rgb(54, 52, 52);
+}
