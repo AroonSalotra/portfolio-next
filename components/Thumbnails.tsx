@@ -6,13 +6,14 @@ const Thumbnails = () => {
 
     interface mapProps {
         title: string;
-        desktopImg: string
-        webUrl: string
+        desktopImg: string;
+        webUrl: string;
     }
 
     return (
         <div className={styles.container}>
-            {Projects.map(({ title, desktopImg, webUrl }: mapProps ) => {
+            
+            {Projects.map(({ title, desktopImg, webUrl }: mapProps) => {
                 return <div key={title}
                     className={styles.thumbnail}>
 
