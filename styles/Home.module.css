@@ -1,11 +1,18 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.3rem;
+  padding-top: 2rem;
 }
 
-.fakeImg {
-  height: 5rem;
-  width: 5rem;
-  background: yellow;
+.intro {
+  max-width: 30rem;
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 260px) {
+  .intro {
+    padding-left: 3rem;
+
+  }
 }

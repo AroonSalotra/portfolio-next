@@ -1,13 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from "next/link"
 import styles from '../styles/Home.module.css'
-import Thumbnails from '../components/Thumbnails'
+import IconDisplay from '../components/IconDisplay';
 
 const Home = () => {
   return (
-    <div>
-      {/* <Thumbnails /> */}
+    <div className={styles.container}>
+
+      <h2 className="font-sm text-sm">Front End
+        <span className='font-md text-md'> <br />
+          Software Developer
+        </span>
+      </h2>
+
+      <p className={`${styles.intro} font-sm`}>
+        I am a self taught programmer always looking to add new tools to my skillset.
+      </p>
+
+      <IconDisplay />
+
     </div>
   );
 }

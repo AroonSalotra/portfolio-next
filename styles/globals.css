@@ -28,28 +28,73 @@ ul {
 }
 
 .navbar {
-  position: fixed;
   width: 100vw;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 200;
+  height: 2.5rem;
+}
+
+.header-title {
+  text-align: center;
+  font-weight: 200;
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
 }
 
 .navbar, a {
-  padding: 0 1rem;
+  padding: 0 0.25rem;
 }
 
 .bg-col-a {
   background-color: var(--var-bg-a);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.font-sm {
+  /* color: green; */
+  font-weight: 200;
+}
 
-  body {
-    color: white;
-    background: rgb(19, 18, 18);
+.font-md {
+  /* color: red; */
+  font-weight: 400;
+}
+
+.text-sm {
+  font-size: 2.3rem;
+}
+
+.text-md {
+  font-size: 3rem;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  opacity: 0.02;
+  filter: grayscale(1);
+  user-select: none;
+  pointer-events: none;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.icon-grid {
+  display: grid; 
+  justify-content: center;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 30%);
+  row-gap: 3rem;
+}
+
+.icon-title {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 310px) {
+  .navbar, a {
+    padding: 0 1rem;
   }
-} */
+}
