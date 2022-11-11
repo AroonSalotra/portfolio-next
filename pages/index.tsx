@@ -7,7 +7,7 @@ import Thumbnails from '../components/Thumbnails'
 const Home = () => {
   return (
     <div>
-      <Thumbnails />
+      {/* <Thumbnails /> */}
     </div>
   );
 }

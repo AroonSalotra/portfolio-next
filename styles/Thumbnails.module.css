@@ -5,6 +5,7 @@
 
 .thumbnail {
     cursor: pointer;
+    /* box-shadow: 0 5px 1px 0 white; */
 }
 
 .img {
@@ -14,8 +15,19 @@
 
 .title {
     text-align: center;
+    font-weight: 500;
+}
+
+.subtitle {
+    text-align: center;
     font-weight: 700;
     background-color: rgb(54, 52, 52);
+}
+
+.body {
+    /* width: 80%; */
+    text-align: center;
+    padding: 0 3rem;
 }
 
 @media (min-width: 680px) {
@@ -30,5 +42,9 @@
         max-width: 100%;
         width: max-content;
         object-fit: cover;
+    }
+
+    .body {
+        text-align: left;
     }
 }

@@ -2,26 +2,31 @@
     {
         "title": "Deal-IO",
         "desktopImg": "https://i.imgur.com/Rq0qVDn.png",
-        "webUrl": "https://aroonsalotra.github.io/game-deals/"
+        "webUrl": "https://aroonsalotra.github.io/game-deals/",
+        "body": "game deal finder for PC using CheapShark API"
     },
     {
         "title": "Workout App",
         "desktopImg": "https://i.imgur.com/A9BRZsG.jpg",
-        "webUrl": "https://aroonsalotra.github.io/workout-app/"
+        "webUrl": "https://aroonsalotra.github.io/workout-app/",
+        "body": ""
     },
     {
         "title": "COVID Data",
         "desktopImg": "https://i.imgur.com/5kpGvdC.png",
-        "webUrl": "https://aroonsalotra.github.io/covid-app/"
+        "webUrl": "https://aroonsalotra.github.io/covid-app/",
+        "body": ""
     },
     {
         "title": "Clicker",
         "desktopImg": "https://i.imgur.com/pTeCofg.png",
-        "webUrl": "https://aroonsalotra.github.io/clicker-game/"
+        "webUrl": "https://aroonsalotra.github.io/clicker-game/",
+        "body": ""
     },
     {
         "title": "Social Media",
         "desktopImg": "https://i.imgur.com/PCFQGHs.png",
-        "webUrl": "https://aroonsalotra.github.io/mock-socialmedia-app/"
+        "webUrl": "https://aroonsalotra.github.io/mock-socialmedia-app/",
+        "body": ""
     }
 ]
