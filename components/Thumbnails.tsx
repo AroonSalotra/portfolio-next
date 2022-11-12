@@ -8,34 +8,44 @@ const Thumbnails = () => {
         title: string;
         desktopImg: string;
         webUrl: string;
-        body: string
+        body?: string;
+        tags: any
     }
 
     return (
         <>
             <h2 className={styles.title}>My Projects</h2>
             <div className={styles.container}>
-                {Projects.map(({ title, desktopImg, webUrl, body }: mapProps) => {
+                {Projects.map(({ title, desktopImg, webUrl, tags }: mapProps) => {
                     return <div key={title}
                         className={styles.thumbnail}>
 
-                        <a href={webUrl} target="_blank" rel="noreferrer">
+                        <a className={styles.anchor}
+                            href={webUrl}
+                            target="_blank"
+                            rel="noreferrer">
 
                             <figure>
                                 <Image src={desktopImg}
                                     className={styles.img}
                                     alt={title}
-                                    width={200}
-                                    height={200}
+                                    width={400}
+                                    height={400}
                                 />
-
-                                <figcaption className={styles.subtitle}>
-                                    {title}
-                                </figcaption>
-
                             </figure>
-
                         </a>
+
+                        <div className={styles.body}>
+                            <h3>{title}</h3>
+                            <ul className={styles.tags}>
+                                {tags.map((elem: string) => {
+                                    return <li key={elem}>
+                                        {elem}</li>
+                                })}
+                            </ul>
+                        </div>
+
+
 
                         {/* <p className={styles.body}>
                             {body}
