@@ -3,6 +3,12 @@ import ContactForm from '../../components/ContactForm';
 import ContactLinkedIn from "../../components/ContactLinkedIn";
 
 const Contact = () => {
+
+    const copyEmail = () => {
+        return navigator.clipboard.writeText("aroonsalotra@gmail.com")
+    }
+
+
     return (
         <div className={styles.container}>
             <ContactForm />
@@ -17,7 +23,8 @@ const Contact = () => {
 
             <p>or</p>
 
-            <button className={styles.email}>
+            <button className={styles.email}
+                onClick={copyEmail}>
                 Copy my email directly
             </button>
 

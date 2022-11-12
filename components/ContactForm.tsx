@@ -21,6 +21,7 @@ const ContactForm = () => {
         emailjs.sendForm('service_r76eupk', 'template_u9xaust', currentForm, 'mxTTQBdikoSMlFRj9')
             .then((result) => {
                 console.log(result.text);
+                alert("Your message has been sent!")
             }, (error) => {
                 console.log(error.text);
             });
@@ -34,14 +35,19 @@ const ContactForm = () => {
                 onSubmit={sendEmail}
                 className={styles.formwrapper}>
 
-                <label>Name</label>
+                <label>Your Name</label>
                 <input type="text" name="user_name" />
-                <label>Email</label>
+                <label>Your Email</label>
                 <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+                <label>Your Message
+                    <span className={styles.required}>*</span>
+                </label>
+                <textarea name="message" required />
                 
+                <input className={styles.submit}
+                    type="submit"
+                    value="Send" />
+
             </form>
         </>
     );

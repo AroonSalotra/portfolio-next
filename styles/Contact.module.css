@@ -3,15 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .formwrapper {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    gap: 0.5rem;
+    width: 80%;
+    padding-top: 3rem;
 }
-
 
 .linkedin {
     background-color: rgb(37, 55, 80);
@@ -23,27 +24,67 @@
     box-shadow: 0 2px 2px 0 black;
 }
 
-.linkedin:hover {
-    transform: scale(1.03);
-    box-shadow: 0 5px 5px 0 black;
-}
-
-.email:hover {
-    transform: scale(1.03);
-    cursor: pointer;
-    box-shadow: 0 5px 5px 0 black;
-}
-
 .email {
     height: 3rem;
     padding: 0 2rem;
     font-weight: 700;
     box-shadow: 0 2px 2px 0 black;
-
 }
 
 .break {
     width: 30vw;
     height: 1px;
     background: rgb(165, 160, 160);
+}
+
+.required {
+    color: rgb(197, 108, 108);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.submit {
+    background: rgb(110, 108, 108);
+    width: 40%;
+    cursor: pointer;
+    padding: 5px;
+    margin: auto;
+    margin-top: 1rem;
+    color: rgb(53, 50, 50);
+    font-weight: 700;
+}
+
+@media (min-width: 600px) {
+
+    .formwrapper {
+        width: 35rem;
+    }
+
+    .email:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+        box-shadow: 0 5px 5px 0 black;
+    }
+
+    .email:active {
+        transform: scale(0.95);
+    }
+
+    .linkedin:hover {
+        transform: scale(1.03);
+        box-shadow: 0 5px 5px 0 black;
+    }
+
+    .linkedin:active {
+        transform: scale(0.95);
+    }
+
+    .submit:hover {
+        color: white;
+        background-color: rgb(56, 54, 54);
+    }
+
+    .submit:active {
+        transform: scale(0.95);
+    }
 }
