@@ -1,15 +1,15 @@
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai"
 import { DiCss3, DiReact } from "react-icons/di"
 import { SiJavascript, SiTypescript, SiFigma, SiNextdotjs } from "react-icons/si"
-import { TiHtml5 } from "react-icons/ti"
 import Icon from "./Icon"
 
 const IconDisplay = () => {
 
     const iconList: { iconType: any, title: string }[] = [
         { iconType: <AiFillHtml5 />, title: "HTML 5" },
-        { iconType: <SiJavascript />, title: "JS" },
-        { iconType: <SiTypescript />, title: "TS" },
+        { iconType: <SiJavascript />, title: "Javascript" },
+        { iconType: <SiTypescript />, title: "Typescript" },
+        { iconType: <DiCss3 />, title: "CSS 3" },
         { iconType: <DiReact />, title: "React" },
         { iconType: <SiNextdotjs />, title: "Next.js" },
         { iconType: <SiFigma />, title: "Figma" },
@@ -17,7 +17,7 @@ const IconDisplay = () => {
     ]
 
     return (
-        <div className="icon-grid icon">
+        <section className="icon-grid icon">
             {iconList.map(({ iconType, title }) => {
                 return <Icon
                     key={title}
@@ -25,7 +25,7 @@ const IconDisplay = () => {
                     title={title}
                 />
             })}
-        </div>
+        </section>
     );
 }
 

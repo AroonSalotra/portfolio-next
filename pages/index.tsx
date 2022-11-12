@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import IconDisplay from '../components/IconDisplay';
+import Button from '../components/Button';
 
 const Home = () => {
   return (
@@ -12,10 +13,16 @@ const Home = () => {
       </h2>
 
       <p className={`${styles.intro} font-sm`}>
-        I am a self taught programmer always looking to add new tools to my skillset.
+        I am a driven, self taught developer with many of my projects utilizing React and interacting with APIs via Axios.
       </p>
 
-      <IconDisplay />
+      <div className={styles.skills}>
+        <h2 className='font-sm' >My Skillset</h2>
+        <IconDisplay />
+      </div>
+
+      <Button />
+
 
     </div>
   );

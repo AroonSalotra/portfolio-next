@@ -10,9 +10,14 @@
   padding-top: 0.5rem;
 }
 
+.skills {
+  margin-top: 4rem;
+}
+
 @media (min-width: 260px) {
   .intro {
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
+    max-width: 25rem;
 
   }
 }
