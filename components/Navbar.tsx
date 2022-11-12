@@ -16,6 +16,11 @@ const Navbar = () => {
                     {title}
                 </Link>
             })}
+            <a href="https://github.com/AroonSalotra"
+                target={"_blank"}
+                rel="noreferrer">
+                My Github
+            </a>
         </nav>
     );
 }

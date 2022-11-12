@@ -9,7 +9,7 @@ const Thumbnails = () => {
         desktopImg: string;
         webUrl: string;
         body?: string;
-        tags: any
+        tags?: any
     }
 
     return (
