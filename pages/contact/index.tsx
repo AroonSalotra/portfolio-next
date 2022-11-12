@@ -11,8 +11,10 @@ const Contact = () => {
 
     return (
         <div className={styles.container}>
+            {/* <h1 className={styles.title}>Contact</h1> */}
+            {/* <h1 className="title">Contact</h1> */}
+            <h1 className={`title ${styles.title}`}>Get in touch</h1>
             <ContactForm />
-            {/* <h1>Contact</h1> */}
             <div className={styles.break} />
             <a href="https://www.linkedin.com/in/aroon-salotra-0aa5b6209/"
                 className={styles.linkedin}

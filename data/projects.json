@@ -18,6 +18,16 @@
         ]
     },
     {
+        "title": "Mock Social Media",
+        "desktopImg": "https://i.imgur.com/PCFQGHs.png",
+        "webUrl": "https://aroonsalotra.github.io/mock-socialmedia-app/",
+        "tags": [
+            "API",
+            "React",
+            "Tailwind"
+        ]
+    },
+    {
         "title": "COVID Data",
         "desktopImg": "https://i.imgur.com/5kpGvdC.png",
         "webUrl": "https://aroonsalotra.github.io/covid-app/",
@@ -32,16 +42,6 @@
         "webUrl": "https://aroonsalotra.github.io/clicker-game/",
         "tags": [
             "React"
-        ]
-    },
-    {
-        "title": "Mock Social Media",
-        "desktopImg": "https://i.imgur.com/PCFQGHs.png",
-        "webUrl": "https://aroonsalotra.github.io/mock-socialmedia-app/",
-        "tags": [
-            "API",
-            "React",
-            "Tailwind"
         ]
     }
 ]

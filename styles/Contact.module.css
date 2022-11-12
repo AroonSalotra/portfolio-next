@@ -6,12 +6,16 @@
     gap: 2rem;
 }
 
+.title {
+    margin-top: 2rem;
+}
+
 .formwrapper {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 80%;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 .linkedin {
