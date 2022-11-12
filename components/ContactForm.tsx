@@ -10,12 +10,15 @@ const ContactForm = () => {
     //     message: "",
     //     reply_to: ""
     // })
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: any) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_r76eupk', 'template_u9xaust', form.current, 'mxTTQBdikoSMlFRj9')
+        const currentForm = form.current;
+        if (currentForm == null) return;
+
+        emailjs.sendForm('service_r76eupk', 'template_u9xaust', currentForm, 'mxTTQBdikoSMlFRj9')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -26,7 +29,11 @@ const ContactForm = () => {
     return (
         <>
             {/* <h2>Send me an email</h2> */}
-            <form ref={form} onSubmit={sendEmail} className={styles.formwrapper}>
+            <form
+                ref={form}
+                onSubmit={sendEmail}
+                className={styles.formwrapper}>
+
                 <label>Name</label>
                 <input type="text" name="user_name" />
                 <label>Email</label>
@@ -34,6 +41,7 @@ const ContactForm = () => {
                 <label>Message</label>
                 <textarea name="message" />
                 <input type="submit" value="Send" />
+                
             </form>
         </>
     );
