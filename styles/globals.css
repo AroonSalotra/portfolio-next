@@ -110,6 +110,22 @@ ul {
   border-color: white;
 }
 
+input, textarea {
+  background-color: rgb(187, 181, 181);
+  padding: 5px;
+  font-size: 1rem;
+}
+
+input[type=submit] {
+  background: rgb(110, 108, 108);
+  width: 40%;
+  cursor: pointer;
+  padding: 5px;
+  margin: auto;
+  margin-top: 1rem;
+  color: rgb(46, 43, 43);
+  font-weight: 700;
+}
 
 
 @media (min-width: 400px) {
