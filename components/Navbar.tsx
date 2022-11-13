@@ -4,12 +4,11 @@ import { useState } from "react"
 
 const Navbar = () => {
 
-    const [mobileNav, setMobileNav] = useState(false)
+    const [mobileNav, setMobileNav] = useState(true)
 
     const handleClick = () => {
         return setMobileNav(state => !mobileNav)
     }
-
 
     const navbarList: { title: string, linkTo: string }[] = [
         { title: "Home", linkTo: "/" },
@@ -25,10 +24,11 @@ const Navbar = () => {
                 onClick={handleClick}
             />
 
-            <div className={`navbar-desktop ${mobileNav ? "show" : ""}`}>
+            <div className={`navbar-desktop ${mobileNav ? "hide" : ""}`}>
                 {navbarList.map(({ title, linkTo }) => {
                     return <Link key={title}
-                        href={linkTo}>
+                        href={linkTo}
+                        onClick={handleClick}>
                         {title}
                     </Link>
                 })}
