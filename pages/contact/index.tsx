@@ -1,6 +1,5 @@
 import styles from "../../styles/Contact.module.css"
 import ContactForm from '../../components/ContactForm';
-import ContactLinkedIn from "../../components/ContactLinkedIn";
 
 const Contact = () => {
 
@@ -11,8 +10,6 @@ const Contact = () => {
 
     return (
         <div className={`${styles.container} fade-up`}>
-            {/* <h1 className={styles.title}>Contact</h1> */}
-            {/* <h1 className="title">Contact</h1> */}
             <h1 className={`title ${styles.title}`}>Get in touch</h1>
             <ContactForm />
             <div className="break" />
