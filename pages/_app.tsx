@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       {/* <Navbar /> */}
       <Header />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </Layout>
   )
 }

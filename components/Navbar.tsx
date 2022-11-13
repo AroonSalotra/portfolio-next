@@ -32,18 +32,6 @@ const Navbar = () => {
                         {title}
                     </Link>
                 })}
-
-                <a href="https://github.com/AroonSalotra"
-                    target={"_blank"}
-                    rel="noreferrer">
-                    Github
-                </a>
-
-                <a href="https://drive.google.com/file/d/1eX_wb5To_GR_xKO4-84zqQBAyVP3QQKF/view?usp=share_link"
-                    target={"_blank"}
-                    rel="noreferrer">
-                    Resume
-                </a>
             </div>
 
         </nav>
