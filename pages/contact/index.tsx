@@ -9,7 +9,7 @@ const Contact = () => {
 
 
     return (
-        <div className={`${styles.container} fade-up`}>
+        <section className={`${styles.container} fade-up`}>
             <h1 className={`title ${styles.title}`}>Get in touch</h1>
             <ContactForm />
             <div className="break" />
@@ -27,7 +27,7 @@ const Contact = () => {
                 Copy my email
             </button>
 
-        </div>
+        </section>
     );
 }
 

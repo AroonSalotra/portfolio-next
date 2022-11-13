@@ -2,10 +2,10 @@ import Navbar from "./Navbar";
 
 const Header = () => {
     return (
-        <div>
+        <header>
             <h1 className="header-title bg-col-a">Aroon Salotra</h1>
             <Navbar />
-        </div>
+        </header>
     );
 }
 
