@@ -6,7 +6,7 @@ const Footer = () => {
 
     const footerList: { title: string, linkTo: string }[] = [
         { title: "My Github", linkTo: "https://github.com/AroonSalotra" },
-        { title: "My CV", linkTo: "https://drive.google.com/file/d/1eX_wb5To_GR_xKO4-84zqQBAyVP3QQKF/view?usp=share_link" }
+        { title: "My CV", linkTo: "https://drive.google.com/file/d/1cqA7aXGQuY2G08-LSVbCBOTBTyRqdwk9/view?usp=share_linkk" }
     ]
 
     return (
