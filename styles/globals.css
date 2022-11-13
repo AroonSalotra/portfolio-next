@@ -163,6 +163,39 @@ input:focus, textarea:focus {
   background-color: gray;
 }
 
+.fade-up {
+  animation: fadeup 400ms ease;
+}
+
+.fade-left {
+  animation: fadeleft 400ms ease;
+
+}
+
+@keyframes fadeup {
+  from {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeleft {
+  from {
+    transform: translateX(-3rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
 
 @media (min-width: 600px) {
 

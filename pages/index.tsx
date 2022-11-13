@@ -4,7 +4,7 @@ import Button from '../components/Button';
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} fade-up`}>
 
       <h2 className="font-sm text-sm">Front End
         <span className='font-md text-md'> <br />
@@ -22,7 +22,6 @@ const Home = () => {
       </div>
 
       <Button />
-
 
     </div>
   );

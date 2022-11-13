@@ -10,7 +10,7 @@ const Contact = () => {
 
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} fade-up`}>
             {/* <h1 className={styles.title}>Contact</h1> */}
             {/* <h1 className="title">Contact</h1> */}
             <h1 className={`title ${styles.title}`}>Get in touch</h1>

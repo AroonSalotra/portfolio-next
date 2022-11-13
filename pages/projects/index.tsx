@@ -2,7 +2,7 @@ import Thumbnails from "../../components/Thumbnails"
 
 const Projects = () => {
   return (
-    <div>
+    <div className="fade-left">
       {/* <h1>Projects</h1> */}
       <Thumbnails />
     </div>
