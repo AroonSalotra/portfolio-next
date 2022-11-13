@@ -6,14 +6,17 @@ const Home = () => {
   return (
     <section className={`${styles.container} fade-up`}>
 
-      <h2 className="font-sm text-sm">Front End
-        <span className='font-md text-md'> <br />
+      <h2 className="font-sm text-sm">
+        Front End
+        <span className='font-md text-md'>
+          <br />
           Software Developer
         </span>
       </h2>
 
       <p className={`${styles.intro} font-sm`}>
-        I am a driven, self taught developer with many of my projects utilizing React and interacting with APIs via Axios.
+        Self-taught UK based developer -
+        I build applications focusing on responsiveness & functionality
       </p>
 
       <div className={styles.skills}>
