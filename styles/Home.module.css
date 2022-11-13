@@ -1,5 +1,8 @@
 .container {
+  position: relative;
   width: fit-content;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   margin: auto;
   font-size: 1.3rem;
   padding-top: 2rem;
