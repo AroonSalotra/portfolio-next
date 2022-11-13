@@ -116,7 +116,6 @@ ul {
   /* top: 7rem; */
   /* height: 50rem; */
   opacity: 0.02;
-  /* opacity: 0.3; */
   filter: grayscale(1);
   user-select: none;
   pointer-events: none;
@@ -125,6 +124,12 @@ ul {
 .icon {
   font-size: 3rem;
 }
+
+.footer-icons {
+  font-size: 2rem;
+}
+
+
 
 .icon-grid {
   display: grid;
@@ -258,6 +263,10 @@ input:focus, textarea:focus {
 
   .header-title {
     display: block;
+  }
+
+  .footer-icons:hover {
+    transform: translateY(-5px);
   }
 
 }
