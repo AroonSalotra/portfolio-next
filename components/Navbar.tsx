@@ -36,7 +36,13 @@ const Navbar = () => {
                 <a href="https://github.com/AroonSalotra"
                     target={"_blank"}
                     rel="noreferrer">
-                    My Github
+                    Github
+                </a>
+
+                <a href="https://drive.google.com/file/d/1eX_wb5To_GR_xKO4-84zqQBAyVP3QQKF/view?usp=share_link"
+                    target={"_blank"}
+                    rel="noreferrer">
+                    Resume
                 </a>
             </div>
 
