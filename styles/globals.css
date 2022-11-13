@@ -195,6 +195,9 @@ input:focus, textarea:focus {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   background-color: var(--var-bg-a);
   /* position: absolute; */
 }
@@ -205,6 +208,7 @@ input:focus, textarea:focus {
   font-size: 1.3rem;
   padding: 5px;
   font-weight: 300;
+  gap: 1rem;
 }
 
 
@@ -279,23 +283,10 @@ input:focus, textarea:focus {
     margin-top: 2rem;
     width: auto;
     justify-content: left;
-    /* transform: translateY(4rem); */
   }
 
   .icon-grid {
     grid-template-columns: repeat(4, 25%);
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    transform: translate(0, 0);
-    /* height: 3rem; */
-    width: 100vw;
-  }
-
-  .footer ul {
-    /* display: flex; */
   }
 
   .hover-bold {

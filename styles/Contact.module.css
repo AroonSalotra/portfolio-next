@@ -44,13 +44,13 @@
 
 .submit {
     background-color: rgb(56, 54, 54);
-    width: 40%;
+    /* width: 40%; */
+    width: 80vw;
     cursor: pointer;
     padding: 5px;
     margin: auto;
     margin-top: 1rem;
     color: white;
-
     font-weight: 700;
 }
 
@@ -77,6 +77,10 @@
 
     .linkedin:active {
         transform: scale(0.95);
+    }
+
+    .submit {
+        width: 40%;
     }
 
     .submit:hover {
