@@ -16,7 +16,7 @@ const Home = () => {
 
       <p className={`${styles.intro} font-sm`}>
         Self-taught UK based developer -
-        I build applications focusing on responsiveness & functionality
+        I build applications focusing on responsiveness & functionality.
       </p>
 
       <div className={styles.skills}>

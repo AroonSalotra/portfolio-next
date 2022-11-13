@@ -19,10 +19,11 @@ const Navbar = () => {
     return (
         <nav className="navbar bg-col-a">
 
-            <GiHamburgerMenu
-                className={"navbar-mobile"}
-                onClick={handleClick}
-            />
+            <button className="navbar-mobile">
+                <GiHamburgerMenu
+                    onClick={handleClick}
+                />
+            </button>
 
             <div className={`navbar-desktop ${mobileNav ? "hide" : ""}`}>
                 {navbarList.map(({ title, linkTo }) => {
