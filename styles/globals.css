@@ -36,7 +36,8 @@ ul {
 
 .navbar {
   width: 100vw;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
   font-size: 1.3rem;
   font-weight: 200;
   height: 2.5rem;
@@ -53,9 +54,10 @@ ul {
   z-index: 20 !important;
   /* padding-top: 2rem; */
   width: fit-content;
-  margin: auto;
-  margin-top: 1rem;
+  /* margin: auto; */
+  /* margin-top: 0.7rem; */
   /* text-align: left; */
+  padding: 1rem 0;
 }
 
 .hide {
@@ -67,7 +69,8 @@ ul {
   /* position: fixed; */
   left: 1rem;
   top: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-top: 5px;
 }
 
 .title {
