@@ -28,7 +28,9 @@ const Navbar = () => {
                 {navbarList.map(({ title, linkTo }) => {
                     return <Link key={title}
                         href={linkTo}
-                        onClick={handleClick}>
+                        onClick={handleClick}
+                        className="hover-bold"
+                    >
                         {title}
                     </Link>
                 })}

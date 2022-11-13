@@ -20,7 +20,9 @@ const Footer = () => {
                     return <a href={linkTo}
                         key={title}
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noreferrer"
+                        className="hover-bold"
+                    >
                         <li>{title}</li>
                     </a>
                 })}

@@ -15,7 +15,7 @@ const Contact = () => {
             {/* <h1 className="title">Contact</h1> */}
             <h1 className={`title ${styles.title}`}>Get in touch</h1>
             <ContactForm />
-            <div className={styles.break} />
+            <div className="break" />
             <a href="https://www.linkedin.com/in/aroon-salotra-0aa5b6209/"
                 className={styles.linkedin}
                 target={"_blank"}

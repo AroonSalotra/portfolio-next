@@ -36,12 +36,6 @@
     box-shadow: 0 2px 2px 0 black;
 }
 
-.break {
-    height: 1px;
-    background: rgb(165, 160, 160);
-    margin-bottom: 1rem;
-    width: 90vw;
-}
 
 .required {
     color: rgb(197, 108, 108);

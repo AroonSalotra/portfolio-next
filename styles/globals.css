@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+* {
+  /* background-color: rgba(86, 145, 86, 0.144); */
+}
+
 :root {
   --var-bg-a: #2B2B2B;
 }
@@ -15,7 +19,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: rgb(19, 18, 18);
+  /* background: var(--var-bg-a); */
   color: white;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -104,7 +110,10 @@ ul {
   width: 100vw;
   /* bottom: 0; */
   height: 100vh;
+  /* top: 7rem; */
+  /* height: 50rem; */
   opacity: 0.02;
+  /* opacity: 0.3; */
   filter: grayscale(1);
   user-select: none;
   pointer-events: none;
@@ -116,7 +125,9 @@ ul {
 
 .icon-grid {
   display: grid;
-  grid-template-columns: repeat(2, 25%);
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 20%);
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
@@ -124,6 +135,8 @@ ul {
   margin-top: 2rem;
   row-gap: 3rem;
   column-gap: 2rem;
+  justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .icon-title {
@@ -131,16 +144,24 @@ ul {
 }
 
 .btn-project {
-  position: absolute;
-  transform: translateY(5rem);
+  /* transform: translateY(4rem); */
+  display: flex;
   height: 6rem;
   padding-top: 1.5rem;
-  text-align: center;
   border: 2px solid rgb(104, 100, 100);
   background-color: rgb(199, 198, 198);
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   width: 100vw;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.break {
+  height: 1px;
+  background: rgb(165, 160, 160);
+  margin-bottom: 1rem;
+  width: 90vw;
 }
 
 .btn-project:hover {
@@ -168,23 +189,22 @@ input:focus, textarea:focus {
 
 .fade-left {
   animation: fadeleft 400ms ease;
-
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  background: rgb(54, 53, 53);
-  width: 100vw;
+  background-color: var(--var-bg-a);
+  /* position: absolute; */
 }
 
 .footer ul {
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 5px;
   font-weight: 300;
 }
+
+
 
 @keyframes fadeup {
   from {
@@ -233,14 +253,7 @@ input:focus, textarea:focus {
     display: block;
   }
 
-  .navbar-desktop a:hover {
-    font-weight: 500;
-    transition: font-weight 300ms ease;
-  }
 }
-
-
-
 
 @media (min-width: 310px) {
   .navbar, a {
@@ -250,6 +263,7 @@ input:focus, textarea:focus {
   .icon-grid {
     display: grid;
     grid-template-columns: repeat(3, 25%);
+    padding-bottom: 5rem;
     column-gap: 0rem;
   }
 
@@ -257,11 +271,37 @@ input:focus, textarea:focus {
 
 @media (min-width: 400px) {
   .btn-project {
-    width: 23rem;
+    padding-left: 8rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    width: auto;
+    justify-content: left;
+    /* transform: translateY(4rem); */
   }
 
   .icon-grid {
     grid-template-columns: repeat(4, 25%);
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    transform: translate(0, 0);
+    /* height: 3rem; */
+    width: 100vw;
+  }
+
+  .footer ul {
+    /* display: flex; */
+  }
+
+  .hover-bold {
+    transition: font-weight 200ms ease-out;
+  }
+
+  .hover-bold:hover {
+    font-weight: 600;
+    transition: font-weight 100ms ease-out;
   }
 
 }

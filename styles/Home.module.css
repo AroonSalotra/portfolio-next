@@ -1,12 +1,13 @@
 .container {
   position: relative;
   width: fit-content;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   margin: auto;
   font-size: 1.3rem;
   padding-top: 2rem;
+  text-align: center;
+  /* padding: 0 2rem; */
 }
+
 
 .intro {
   max-width: 30rem;
@@ -22,6 +23,5 @@
   .intro {
     /* padding-left: 3rem; */
     max-width: 25rem;
-
   }
 }
