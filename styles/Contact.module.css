@@ -19,23 +19,22 @@
     /* border: 2px solid red; */
 }
 
-.linkedin {
-    background-color: rgb(37, 55, 80);
-    /* position: absolute; */
+.contactBtn {
     height: 3rem;
     font-weight: 700;
-    border-radius: 5px;
-    padding: 0.75rem 2rem;
+    font-size: 1rem;
     box-shadow: 0 2px 2px 0 black;
+
+}
+
+.linkedin {
+    background-color: rgb(37, 55, 80);
+    padding: 0.75rem 2rem;
 }
 
 .email {
-    height: 3rem;
     padding: 0 2rem;
-    font-weight: 700;
-    box-shadow: 0 2px 2px 0 black;
 }
-
 
 .required {
     color: rgb(197, 108, 108);
@@ -44,13 +43,14 @@
 }
 
 .submit {
-    background: rgb(110, 108, 108);
+    background-color: rgb(56, 54, 54);
     width: 40%;
     cursor: pointer;
     padding: 5px;
     margin: auto;
     margin-top: 1rem;
-    color: rgb(53, 50, 50);
+    color: white;
+
     font-weight: 700;
 }
 
@@ -80,8 +80,8 @@
     }
 
     .submit:hover {
-        color: white;
-        background-color: rgb(56, 54, 54);
+        color: rgb(31, 28, 28);
+        background: rgb(110, 108, 108);
     }
 
     .submit:active {

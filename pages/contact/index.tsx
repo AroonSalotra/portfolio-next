@@ -17,7 +17,7 @@ const Contact = () => {
             <ContactForm />
             <div className="break" />
             <a href="https://www.linkedin.com/in/aroon-salotra-0aa5b6209/"
-                className={styles.linkedin}
+                className={`${styles.contactBtn} ${styles.linkedin}`}
                 target={"_blank"}
                 rel="noreferrer">
                 Find me on LinkedIn
@@ -25,9 +25,9 @@ const Contact = () => {
 
             <p>or</p>
 
-            <button className={styles.email}
+            <button className={`${styles.contactBtn} ${styles.email}`}
                 onClick={copyEmail}>
-                Copy my email directly
+                Copy my email
             </button>
 
         </div>
