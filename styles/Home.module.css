@@ -7,10 +7,15 @@
   text-align: center;
 }
 
+
 .intro {
-  max-width: 30rem;
-  padding-top: 0.5rem;
-  padding: 0 10px;
+  /* max-width: 25rem; */
+  /* padding-top: 0.5rem; */
+  /* padding: 0 10px; */
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: left;
 }
 
 .skills {
@@ -26,5 +31,6 @@
 @media (min-width: 260px) {
   .intro {
     max-width: 25rem;
+    /* margin: none; */
   }
 }
