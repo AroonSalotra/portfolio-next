@@ -1,8 +1,8 @@
 const Layout = ({ children }: Props) => {
     return (
-            <section>
-                {children}
-            </section>
+        <section className="container-main">
+            {children}
+        </section>
     );
 }
 
