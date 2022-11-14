@@ -169,6 +169,7 @@ header {
   margin-top: 2rem;
 }
 
+
 .btn-project:active {
   transform: translateX(3rem);
   transition: transform 200ms ease;
@@ -223,7 +224,7 @@ input:focus, textarea:focus {
 
 @keyframes fadeup {
   from {
-    transform: translateY(5rem);
+    transform: translateY(2rem);
     opacity: 0;
   }
 

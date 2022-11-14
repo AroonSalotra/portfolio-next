@@ -29,10 +29,11 @@ const Home = () => {
       <div className="break" />
 
       <Button linkTo='/projects'
-        body='My Projects' />
+        body='My Projects'
+        addClass="btn-project"
+      />
 
-      <Button linkTo='/contact'
-        body='Contact Me' />
+
 
     </section>
   );

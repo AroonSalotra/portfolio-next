@@ -2,14 +2,15 @@ import Link from "next/link"
 
 interface btnProps {
     body: string,
-    linkTo: string
+    linkTo: string,
+    addClass?: string
 }
 
-const Button = ({ body, linkTo }: btnProps) => {
+const Button = ({ body, linkTo, addClass }: btnProps) => {
 
     return (
         <>
-            <Link className="btn-project"
+            <Link className={addClass}
                 href={linkTo}>
                 {body}
             </Link>
