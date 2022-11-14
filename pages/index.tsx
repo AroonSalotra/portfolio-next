@@ -4,7 +4,7 @@ import Button from '../components/Button';
 
 const Home = () => {
   return (
-    <section className={`${styles.container} fade-up`}>
+    <section className={`${styles.container} fade-up`} tabIndex={0}>
 
       <h2 className="font-sm text-sm">
         Front End
@@ -14,15 +14,19 @@ const Home = () => {
         </span>
       </h2>
 
+      {/* <div className="break" /> */}
+
       <p className={`${styles.intro} font-sm`}>
         Self-taught UK based developer -
         I build applications focusing on responsiveness & functionality.
       </p>
 
       <div className={styles.skills}>
-        <h2 className='font-sm' >My Skillset</h2>
+        <div className="break" />
+        <h3 className='font-sm' >My Skillset</h3>
         <IconDisplay />
       </div>
+      <div className="break" />
 
       <Button />
 

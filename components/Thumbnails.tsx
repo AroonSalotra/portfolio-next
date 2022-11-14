@@ -45,12 +45,6 @@ const Thumbnails = () => {
                             </ul>
                         </div>
 
-
-
-                        {/* <p className={styles.body}>
-                            {body}
-                        </p> */}
-
                     </div>
                 })}
             </div>

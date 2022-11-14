@@ -39,10 +39,16 @@
     background: rgb(53, 52, 52);
 }
 
+.body h3 {
+    font-size: 1.2rem;
+    font-weight: 400
+}
+
 .tags {
     display: flex;
-    /* justify-content: space-between; */
+    padding-top: 0.5rem;
     gap: 2rem;
+    font-weight: 200;
 }
 
 @media (min-width: 860px) {
