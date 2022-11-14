@@ -271,6 +271,7 @@ input:focus, textarea:focus {
     display: block;
     right: auto;
     padding-bottom: 0.5rem;
+    font-size: 3rem;
   }
 
 

@@ -1,4 +1,5 @@
 import Thumbnails from "../../components/Thumbnails"
+import Button from "../../components/Button"
 
 const Projects = () => {
   return (
