@@ -25,10 +25,14 @@ const Home = () => {
         <h3 className='font-sm' >My Skillset</h3>
         <IconDisplay />
       </div>
-      
+
       <div className="break" />
 
-      <Button />
+      <Button linkTo='/projects'
+        body='My Projects' />
+
+      <Button linkTo='/contact'
+        body='Contact Me' />
 
     </section>
   );

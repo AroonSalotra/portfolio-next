@@ -1,17 +1,17 @@
 import Link from "next/link"
 
-const Button = () => {
+interface btnProps {
+    body: string,
+    linkTo: string
+}
 
-    const handleClick = () => {
-        return "location.href='http://localhost:3000/projects'"
-    }
-
+const Button = ({ body, linkTo }: btnProps) => {
 
     return (
         <>
             <Link className="btn-project"
-                href={"/projects"}>
-                My Projects
+                href={linkTo}>
+                {body}
             </Link>
         </>
     );
