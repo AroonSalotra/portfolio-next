@@ -27,6 +27,7 @@ body {
 
 .container-main {
   height: 1000px;
+  /* min-height: 1000px; */
   /* border: 2px solid red; */
 }
 
@@ -159,10 +160,6 @@ ul {
   display: flex;
   flex-direction: column;
   grid-template-columns: repeat(2, 20%);
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-items: center; */
   margin-top: 2rem;
   row-gap: 3rem;
   column-gap: 2rem;
@@ -175,7 +172,6 @@ ul {
 }
 
 .btn-project {
-  /* transform: translateY(4rem); */
   display: flex;
   height: 6rem;
   padding-top: 1.5rem;
@@ -185,7 +181,13 @@ ul {
   color: black;
   width: 100vw;
   justify-content: center;
-  /* margin-bottom: 3rem; */
+  font-size: 2rem;
+  /* font-weight: 600; */
+}
+
+.btn-project:active {
+  transform: translateX(3rem);
+  transition: transform 200ms ease;
 }
 
 .break {
@@ -288,6 +290,7 @@ input:focus, textarea:focus {
     position: relative;
     display: block;
     right: auto;
+    padding-bottom: 0.5rem;
   }
 
   .footer-icons:hover {
