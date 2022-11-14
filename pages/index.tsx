@@ -14,8 +14,6 @@ const Home = () => {
         </span>
       </h2>
 
-      {/* <div className="break" /> */}
-
       <p className={`${styles.intro} font-sm`}>
         Self-taught UK based developer -
         I build applications focusing on responsiveness & functionality.

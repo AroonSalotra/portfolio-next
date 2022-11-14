@@ -26,9 +26,9 @@ body {
 }
 
 .container-main {
-  max-height: 1000px;
-  /* min-height: 1000px; */
-  /* border: 2px solid red; */
+  /* max-height: 1000px; */
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,15 +92,14 @@ ul {
   letter-spacing: 2px;
 }
 
+header {
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+}
+
 .header-title {
-  /* text-align: right; */
-  /* font-weight: 200; */
-  /* font-size: 3rem; */
-  /* padding-bottom: 0.5rem; */
-  /* display: none; */
   position: absolute;
-  /* right: 50px; */
-  /* outline: 2px solid red; */
   width: 100%;
   text-align: center;
   background: none;
@@ -223,11 +222,10 @@ input:focus, textarea:focus {
 .footer {
   /* position: fixed; */
   /* bottom: 0; */
-  background-color: var(--var-bg-a);
+  /* background-color: var(--var-bg-a); */
+  background-color: rgba(48, 45, 45, 0.171);
   margin-top: 2.5rem;
   width: 100vw;
-  position: fixed;
-  bottom: 0;
   /* position: absolute; */
 
 }
@@ -285,12 +283,14 @@ input:focus, textarea:focus {
   }
 
   .header-title {
-    text-align: center;
+    /* position: absolute; */
     position: relative;
+    text-align: center;
     display: block;
     right: auto;
     padding-bottom: 0.5rem;
   }
+
 
   .footer-icons:hover {
     transform: translateY(-5px);
@@ -338,5 +338,10 @@ input:focus, textarea:focus {
     transition: font-weight 100ms ease-out;
   }
 
+  .footer {
+    /* position: fixed;
+    bottom: 0; */
+    /* position: relative; */
+  }
 
 }
