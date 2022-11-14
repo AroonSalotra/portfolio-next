@@ -102,11 +102,12 @@ header {
 
 .font-sm {
   font-weight: 200;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 
 .font-md {
   font-weight: 400;
+  word-break: break-all;
 }
 
 .text-sm {
@@ -330,5 +331,9 @@ input:focus, textarea:focus {
 @media (min-width: 240px) {
   .header-title {
     display: block;
+  }
+
+  .font-md {
+    word-break: normal;
   }
 }
