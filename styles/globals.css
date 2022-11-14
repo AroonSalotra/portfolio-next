@@ -226,6 +226,8 @@ input:focus, textarea:focus {
   background-color: var(--var-bg-a);
   margin-top: 2.5rem;
   width: 100vw;
+  position: fixed;
+  bottom: 0;
   /* position: absolute; */
 
 }
@@ -336,9 +338,5 @@ input:focus, textarea:focus {
     transition: font-weight 100ms ease-out;
   }
 
-  .footer {
-    position: fixed;
-    bottom: 0;
-  }
 
 }
