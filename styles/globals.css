@@ -19,14 +19,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: rgb(19, 18, 18);
-  /* background: var(--var-bg-a); */
   color: white;
-  /* width: 100vw; */
-  /* overflow-x: hidden; */
 }
 
 .container-main {
-  /* max-height: 1000px; */
   display: flex;
   flex-direction: column;
 }
@@ -46,8 +42,6 @@ ul {
 }
 
 .navbar {
-  /* width: 100vw; */
-  /* text-align: center; */
   text-align: left;
   font-size: 1.3rem;
   font-weight: 200;
@@ -55,7 +49,6 @@ ul {
 }
 
 .navbar-desktop {
-  /* display: none; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -63,11 +56,7 @@ ul {
   opacity: 1;
   background-color: rgb(43, 40, 40);
   z-index: 20 !important;
-  /* padding-top: 2rem; */
   width: fit-content;
-  /* margin: auto; */
-  /* margin-top: 0rem; */
-  /* text-align: left; */
   padding: 1rem 1rem;
 }
 
@@ -77,7 +66,6 @@ ul {
 }
 
 .navbar-mobile {
-  /* position: fixed; */
   left: 1rem;
   top: 3rem;
   font-size: 2rem;
@@ -93,7 +81,6 @@ ul {
 }
 
 header {
-  /* width: fit-content; */
   display: flex;
   flex-direction: column;
 }
@@ -113,12 +100,10 @@ header {
 }
 
 .font-sm {
-  /* color: green; */
   font-weight: 200;
 }
 
 .font-md {
-  /* color: red; */
   font-weight: 400;
 }
 
@@ -178,7 +163,7 @@ header {
   width: 100vw;
   justify-content: center;
   font-size: 2rem;
-  /* font-weight: 600; */
+  margin-top: 2rem;
 }
 
 .btn-project:active {
@@ -220,22 +205,16 @@ input:focus, textarea:focus {
 }
 
 .footer {
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* background-color: var(--var-bg-a); */
   background-color: rgba(48, 45, 45, 0.171);
   margin-top: 2.5rem;
   width: 100vw;
-  /* position: absolute; */
 
 }
 
 .footer ul {
   display: flex;
   justify-content: center;
-  /* font-size: 1.3rem; */
   padding: 5px;
-  /* font-weight: 300; */
   gap: 1rem;
 }
 

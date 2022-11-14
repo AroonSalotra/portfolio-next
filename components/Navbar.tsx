@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Navbar = () => {
 
@@ -19,13 +19,18 @@ const Navbar = () => {
     return (
         <nav className="navbar bg-col-a">
 
-            <button className="navbar-mobile">
+
+            <button className="navbar-mobile" onClick={handleClick}>
                 <GiHamburgerMenu
-                    onClick={handleClick}
+                    style={{pointerEvents: "none"}}
                 />
             </button>
+            {/* <h1>{mobileNav.toString()}</h1> */}
 
-            <div className={`navbar-desktop ${mobileNav ? "hide" : ""}`}>
+            <div className={`navbar-desktop ${mobileNav ? "hide" : ""}`}
+
+            >
+
                 {navbarList.map(({ title, linkTo }) => {
                     return <Link key={title}
                         href={linkTo}
