@@ -12,10 +12,12 @@
   /* max-width: 25rem; */
   /* padding-top: 0.5rem; */
   /* padding: 0 10px; */
-  width: 90%;
-  margin: auto;
+  /* width: 90%; */
+  /* margin: auto; */
   margin-top: 1rem;
   text-align: left;
+  padding: 0 2rem;
+  /* border: 1px solid yellow; */
 }
 
 .skills {
@@ -32,5 +34,6 @@
   .intro {
     max-width: 25rem;
     /* margin: none; */
+    text-align: center;
   }
 }
