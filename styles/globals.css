@@ -20,11 +20,14 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: rgb(19, 18, 18);
   color: white;
+  overflow-x: hidden;
+
 }
 
 .container-main {
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -266,11 +269,11 @@ input:focus, textarea:focus {
   }
 
   .header-title {
-    /* position: absolute; */
+    position: absolute;
     position: relative;
     text-align: center;
     display: block;
-    right: auto;
+    /* right: auto; */
     padding-bottom: 0.5rem;
     font-size: 3rem;
   }

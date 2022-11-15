@@ -10,7 +10,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <Background />
-      {/* <Navbar /> */}
       <Header />
       <Component {...pageProps} />
       <Footer />
