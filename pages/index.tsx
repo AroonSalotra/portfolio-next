@@ -20,6 +20,13 @@ const Home = () => {
         I build applications focusing on responsiveness & functionality.
       </p>
 
+
+
+      <Button linkTo='/projects'
+        body='My Projects'
+        addClass="btn-project"
+      />
+
       <div className={styles.skills}>
         <div className="break" />
         <h3 className='font-sm' >My Skillset</h3>
@@ -27,13 +34,6 @@ const Home = () => {
       </div>
 
       <div className="break" />
-
-      <Button linkTo='/projects'
-        body='My Projects'
-        addClass="btn-project"
-      />
-
-
 
     </section>
   );
