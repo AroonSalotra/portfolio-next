@@ -10,9 +10,10 @@ const Footer = () => {
 
     return (
         <footer className="footer">
+            
             <div className="break" />
-            <ul>
 
+            <ul>
                 {footerList.map(({ title, linkTo, id }) => {
                     return <a href={linkTo}
                         key={id}

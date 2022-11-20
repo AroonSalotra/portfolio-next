@@ -30,7 +30,6 @@
 @media (min-width: 260px) {
   .intro {
     max-width: 25rem;
-    /* margin: none; */
     text-align: center;
   }
 }
