@@ -5,12 +5,12 @@ const Footer = () => {
 
     const footerList: { title: any, linkTo: string, id: string }[] = [
         { title: <AiFillGithub />, linkTo: "https://github.com/AroonSalotra", id: "github" },
-        { title: <AiFillFilePdf />, linkTo: "https://drive.google.com/file/d/1cqA7aXGQuY2G08-LSVbCBOTBTyRqdwk9/view?usp=share_linkk", id: "resume" }
+        { title: <AiFillFilePdf />, linkTo: "/Aroon_Salotra_Resume.pdf", id: "resume" }
     ]
 
     return (
         <footer className="footer">
-            
+
             <div className="break" />
 
             <ul>
