@@ -1,5 +1,14 @@
 [
     {
+        "title": "Mock Website Seller",
+        "desktopImg": "https://i.imgur.com/9duXGTa.png",
+        "webUrl": "https://freelance-website-iota.vercel.app/",
+        "tags": [
+            "Next.js",
+            "TypeScript"
+        ]
+    },
+    {
         "title": "Deal-IO",
         "desktopImg": "https://i.imgur.com/Rq0qVDn.png",
         "webUrl": "https://aroonsalotra.github.io/game-deals/",
@@ -28,16 +37,7 @@
         ]
     },
     {
-        "title": "COVID Data",
-        "desktopImg": "https://i.imgur.com/5kpGvdC.png",
-        "webUrl": "https://aroonsalotra.github.io/covid-app/",
-        "tags": [
-            "API",
-            "React"
-        ]
-    },
-    {
-        "title": "Clicker",
+        "title": "Clicker Game",
         "desktopImg": "https://i.imgur.com/pTeCofg.png",
         "webUrl": "https://aroonsalotra.github.io/clicker-game/",
         "tags": [
