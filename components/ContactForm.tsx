@@ -1,15 +1,12 @@
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from 'react';
 import styles from "../styles/Contact.module.css"
+import Link from 'next/link';
 
 const ContactForm = () => {
 
-    // const [toSend, setToSend] = useState({
-    //     from_name: "",
-    //     email: "",
-    //     message: "",
-    //     reply_to: ""
-    // })
+    const [isFormActive, setIsFormActive] = useState<boolean>(true)
+
     const form = useRef<HTMLFormElement>(null);
 
     const sendEmail = (e: any) => {
@@ -22,6 +19,7 @@ const ContactForm = () => {
             .then((result) => {
                 console.log(result.text);
                 alert("Your message has been sent!")
+                setIsFormActive(form => false)
             }, (error) => {
                 console.log(error.text);
             });
@@ -29,26 +27,39 @@ const ContactForm = () => {
 
     return (
         <>
-            {/* <h2>Send me an email</h2> */}
-            <form
+            {isFormActive ? <form
                 ref={form}
                 onSubmit={sendEmail}
                 className={styles.formwrapper}>
 
                 <label>Your Name</label>
                 <input type="text" name="user_name" />
-                <label>Your Email</label>
-                <input type="email" name="user_email" />
-                <label>Your Message
-                    <span className={styles.required}>*</span>
+
+                <label>Your Email<span className={styles.required}>*</span></label>
+                <input type="email" name="user_email" required />
+
+                <label>Your Message<span className={styles.required}>*</span>
                 </label>
                 <textarea name="message" required />
-                
+
                 <input className={styles.submit}
                     type="submit"
                     value="Send" />
 
             </form>
+
+                :
+                <>
+                    <p>
+                        Thank you for your message, I will be in contact shortly
+                    </p>
+
+                    <Link href={"/"} className={styles.submit}>
+                        Return to home
+                    </Link>
+                </>
+            }
+
         </>
     );
 }

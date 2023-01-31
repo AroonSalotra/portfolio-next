@@ -7,12 +7,15 @@ const Contact = () => {
         return navigator.clipboard.writeText("aroonsalotra@gmail.com")
     }
 
-
     return (
         <section className={`${styles.container} fade-up`}>
+
             <h1 className={`title ${styles.title}`}>Get in touch</h1>
+
             <ContactForm />
-            <div className="break" style={{width: "40vw"}} />
+
+            <div className="break" style={{ width: "40vw" }} />
+
             <a href="https://www.linkedin.com/in/aroon-salotra-0aa5b6209/"
                 className={`${styles.contactBtn} ${styles.linkedin}`}
                 target={"_blank"}

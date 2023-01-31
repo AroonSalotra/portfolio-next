@@ -25,7 +25,6 @@
     font-weight: 700;
     font-size: 0.8rem;
     box-shadow: 0 2px 2px 0 black;
-
 }
 
 .linkedin {
@@ -48,6 +47,7 @@
     background-color: rgb(56, 54, 54);
     /* width: 40%; */
     width: 80vw;
+    text-align: center;
     cursor: pointer;
     padding: 5px;
     margin: auto;
@@ -82,7 +82,7 @@
     }
 
     .submit {
-        width: 40%;
+        max-width: 10%;
     }
 
     .submit:hover {
