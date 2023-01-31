@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 const Navbar = () => {
 
@@ -19,7 +19,9 @@ const Navbar = () => {
     return (
         <nav className="navbar bg-col-a">
 
-            <button className="navbar-mobile" onClick={handleClick}>
+            <button className="navbar-mobile"
+                type="button"
+                onClick={handleClick}>
                 <GiHamburgerMenu
                     style={{ pointerEvents: "none" }}
                 />

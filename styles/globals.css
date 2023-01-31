@@ -77,9 +77,15 @@ ul {
   gap: 2rem;
   opacity: 1;
   background-color: rgb(43, 40, 40);
+  background-color: rgba(43, 40, 40, 0.623);
   z-index: 20 !important;
   width: fit-content;
   padding: 1rem 1rem;
+}
+
+.navbar-desktop a {
+  background-color: rgba(54, 51, 51, 0.842);
+  padding: 0.5rem;
 }
 
 .hide {
@@ -291,6 +297,10 @@ input:focus, textarea:focus {
     width: 100%;
     transition: font-weight 300ms ease-out;
     pointer-events: all !important;
+  }
+
+  .navbar-desktop a {
+    background-color: inherit;
   }
 
   .header-title {
