@@ -17,8 +17,6 @@ const ContactForm = () => {
 
         emailjs.sendForm('service_r76eupk', 'template_u9xaust', currentForm, 'mxTTQBdikoSMlFRj9')
             .then((result) => {
-                console.log(result.text);
-                alert("Your message has been sent!")
                 setIsFormActive(form => false)
             }, (error) => {
                 console.log(error.text);
@@ -50,7 +48,7 @@ const ContactForm = () => {
 
                 :
                 <>
-                    <p>
+                    <p style={{ textAlign: "center" }}>
                         Thank you for your message, I will be in contact shortly
                     </p>
 
