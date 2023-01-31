@@ -19,17 +19,13 @@ const Navbar = () => {
     return (
         <nav className="navbar bg-col-a">
 
-
             <button className="navbar-mobile" onClick={handleClick}>
                 <GiHamburgerMenu
-                    style={{pointerEvents: "none"}}
+                    style={{ pointerEvents: "none" }}
                 />
             </button>
-            {/* <h1>{mobileNav.toString()}</h1> */}
 
-            <div className={`navbar-desktop ${mobileNav ? "hide" : ""}`}
-
-            >
+            <div className={`navbar-desktop ${mobileNav ? "hide" : ""}`}>
 
                 {navbarList.map(({ title, linkTo }) => {
                     return <Link key={title}

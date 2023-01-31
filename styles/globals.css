@@ -67,7 +67,7 @@ ul {
   text-align: left;
   font-size: 1.3rem;
   font-weight: 200;
-  height: 2.5rem;
+  height: 3rem;
 }
 
 .navbar-desktop {
@@ -124,7 +124,6 @@ header {
 
 .font-sm {
   font-weight: 200;
-  /* word-break: break-all; */
 }
 
 .font-md {
@@ -274,6 +273,10 @@ input:focus, textarea:focus {
 
 @media (min-width: 600px) {
 
+  .navbar {
+    height: 2.5rem;
+  }
+
   .navbar-mobile {
     display: none;
   }
@@ -295,7 +298,6 @@ input:focus, textarea:focus {
     position: relative;
     text-align: center;
     display: block;
-    /* right: auto; */
     padding-bottom: 0.5rem;
     font-size: 3rem;
   }
