@@ -7,9 +7,9 @@ const IconDisplay = () => {
 
     const iconList: { iconType: any, title: string }[] = [
         { iconType: <AiFillHtml5 />, title: "HTML 5" },
+        { iconType: <DiCss3 />, title: "CSS 3" },
         { iconType: <SiJavascript />, title: "Javascript" },
         { iconType: <SiTypescript />, title: "Typescript" },
-        { iconType: <DiCss3 />, title: "CSS 3" },
         { iconType: <DiReact />, title: "React" },
         { iconType: <SiNextdotjs />, title: "Next.js" },
         { iconType: <SiFigma />, title: "Figma" },
