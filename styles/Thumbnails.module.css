@@ -5,8 +5,6 @@
 
 .thumbnail {
     cursor: pointer;
-    /* box-shadow: 0 5px 1px 0 white; */
-    /* border: 3px solid red; */
 }
 
 .img {
@@ -24,7 +22,6 @@
 }
 
 .subtitle {
-    /* text-align: center; */
     font-weight: 500;
     background-color: rgb(54, 52, 52);
     width: 8rem;
@@ -89,6 +86,6 @@
 
     .thumbnail:nth-child(4),
     .thumbnail:nth-child(5) {
-        transform: translateX(50%);
+        /* transform: translateX(50%); */
     }
 }

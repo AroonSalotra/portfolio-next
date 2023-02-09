@@ -1,5 +1,14 @@
 [
     {
+        "title": "To-Do",
+        "desktopImg": "https://i.imgur.com/S4I3Dz1.png",
+        "webUrl": "https://to-do-vert-psi.vercel.app/",
+        "tags": [
+            "Vite",
+            "Tailwind"
+        ]
+    },
+    {
         "title": "Mock Website Seller",
         "desktopImg": "https://i.imgur.com/9duXGTa.png",
         "webUrl": "https://freelance-website-iota.vercel.app/",
