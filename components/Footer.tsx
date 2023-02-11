@@ -15,14 +15,17 @@ const Footer = () => {
 
             <ul>
                 {footerList.map(({ title, linkTo, id }) => {
-                    return <a href={linkTo}
-                        key={id}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover-bold footer-icons"
-                    >
-                        <li>{title}</li>
-                    </a>
+                    return <li key={id}>
+
+                        <a href={linkTo}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover-bold footer-icons"
+                        >
+                            {title}
+                        </a>
+
+                    </li>
                 })}
             </ul>
 
