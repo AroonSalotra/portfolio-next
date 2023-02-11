@@ -33,9 +33,10 @@ const Navbar = () => {
                     return <Link key={title}
                         href={linkTo}
                         onClick={handleClick}
-                        className="hover-bold"
-                    >
+                        className="hover-bold">
+
                         {title}
+
                     </Link>
                 })}
             </div>
